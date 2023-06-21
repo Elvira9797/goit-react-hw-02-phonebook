@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Notiflix from 'notiflix';
 import shortid from 'shortid';
 import { Phonebook } from './App.styled';
 import ContactForm from '../ContactForm';
@@ -19,7 +20,7 @@ class App extends Component {
     const isExist = this.checkExistContact(name);
 
     if (isExist) {
-      alert(`${name} is already in contacts`);
+      Notiflix.Notify.failure(`${name} is already in contacts`);
       return;
     }
 
