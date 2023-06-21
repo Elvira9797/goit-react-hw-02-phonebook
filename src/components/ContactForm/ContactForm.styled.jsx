@@ -23,7 +23,7 @@ export const Input = styled.input`
   &:focus {
     outline: none;
     border: 1px solid transparent;
-    box-shadow: 0 0 8px #91bdf6;
+    box-shadow: 0 0 8px #7fabe4;
   }
 `;
 
