@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { FormContact, Label, Button, Input } from './ContactForm.styled';
+import { FormContact, Label, Button, Input, Div } from './ContactForm.styled';
 
 const ContactForm = ({ onSubmit }) => {
   const initialValues = {
@@ -40,12 +40,12 @@ const ContactForm = ({ onSubmit }) => {
         <Label>
           Name
           <Field type="text" name="name" as={Input} />
-          <ErrorMessage name="name" component="div" />
+          <ErrorMessage name="name" component={Div} />
         </Label>
         <Label>
           Number
           <Field type="tel" name="number" as={Input} />
-          <ErrorMessage name="number" component="div" />
+          <ErrorMessage name="number" component={Div} />
         </Label>
         <Button type="submit">Add contact</Button>
       </FormContact>
