@@ -5,8 +5,7 @@ export const Label = styled.label`
   flex-direction: column;
   font-size: 18px;
   font-weight: 500;
-  gap: 5px;
-  margin-bottom: 20px;
+  gap: 10px;
 `;
 
 export const Input = styled.input`

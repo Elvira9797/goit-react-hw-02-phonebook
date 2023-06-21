@@ -25,4 +25,11 @@ export const Button = styled.button`
   background: none;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
+  cursor: pointer;
+  transition: background 250ms linear, color 250ms linear;
+  &:hover,
+  &:active {
+    background: #508ef0;
+    color: white;
+  }
 `;
