@@ -15,5 +15,7 @@ export const Input = styled.input`
     outline: none;
     border: 1px solid transparent;
     box-shadow: 0 0 8px #7fabe4;
+    background-color: #f5faff;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 `;
